@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Enter your level:</h2>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var text;
+    var level = document.getElementById("myInput").value;
+
+    switch(level) {
+        case "1":
+            text = "FRESHMAN";
+        break;
+        case "2":
+        text = "SOPHOMORE";
+        break;
+        case "3":
+        text = "JUNIOR";
+        break;
+        case "4":
+        text = "SENIOR";
+        break;
+        default:
+        text = "INVALID INPUT";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
